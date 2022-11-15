@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R8T4Nwm1xXiO/02tQvi7vXdqeg2rSanf/40RAe6SF8M=",
+  "Hash": "mAnueH9JIRUQPLeVMEVX/XTBn/UZITSp79BJtfC/yIA=",
   "Source": "WEB_0535005_Vashkevich",
   "BasePath": "_content/WEB_0535005_Vashkevich",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\htmlpage.html"
+    },
+    {
+      "Identity": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\avatar.jpg",
+      "SourceId": "WEB_0535005_Vashkevich",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\",
+      "BasePath": "_content/WEB_0535005_Vashkevich",
+      "RelativePath": "images/avatar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatar.jpg"
     },
     {
       "Identity": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\js\\site.js",

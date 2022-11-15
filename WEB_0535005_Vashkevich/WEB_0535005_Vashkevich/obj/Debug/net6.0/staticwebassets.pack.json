@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\htmlpage.html"
     },
     {
+      "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\avatar.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar.jpg"
+    },
+    {
       "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

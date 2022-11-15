@@ -4,58 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WEB_0535005_Vashkevich</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />  
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WEB_0535005_Vashkevich.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="lib/font-awesome/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <!-- меню сайта -->
-                <a class="navbar-brand" href="#">WebLabsV06</a>
+                <a class="navbar-brand" asp-action="Index" asp-controller="Home">WebLabsV06</a>
                 <div class="navbar-nav flex-grow-1">
-                    <a class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Lab 2</a>
-                    <a class="nav-item nav-link" asp-controller="Product" asp-action="Index">Каталог</a>
-                    <a class="nav-item nav-link" asp-area="Admin" asp-asp-page="/Index">Администрирование</a>
+                    @await Component.InvokeAsync("Menu")
                 </div>
-                <!-- меню сайта - конец -->
                 <!-- Информация пользователя -->
-                <a asp-controller="Cart" asp-action="Index" class="navbar-text ml-auto">
-                    00,0 руб <i class="fas fa-shopping-cart nav-color"></i> (0)
-                </a>
-                <div id="dropdown_header" class="dropdown nav-color">
-                    <div class="dropdown-toggle" id="dropdownMenuButton"
-                         data-toggle="dropdown" aria-haspopup="true"
-                         aria-expanded="false">
-                        <img src="images/avatar.jpg" width="30"
-                             alt="User" class="rounded" />
-                    </div>
-                    <div class="dropdown-menu"
-                         aria-labelledby="dropdownMenuButton">
-                        <div class="dropdown-item-text">
-                            <img src="images/avatar.jpg" width="50"
-                                 alt="User" class="rounded" />
-                            user@mail.ru
-
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" asp-controller="Cart" asp-action="Index">Мои товары</a>
-                        <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout">Log off</a>
-                    </div>
-                </div>
+                <partial name="_UserPartial" />
                 <!-- Информация пользователя - конец -->
             </nav> <!-- Панель навигации - конец -->
         </div>
     </header>
     <main>
-        @RenderBody();
+        @RenderBody()
     </main>
 
     <footer>
         <div class="container">
-            <div class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="navbar navbar-expand navbar-dark bg-dark">
                 <div class="navbar-nav ms-auto">
                     <a align="right" class="nav-item nav-link" href="http://www.facebook.com">
                         <i class="fab fa-facebook-f fa-2x"></i>
@@ -70,6 +49,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

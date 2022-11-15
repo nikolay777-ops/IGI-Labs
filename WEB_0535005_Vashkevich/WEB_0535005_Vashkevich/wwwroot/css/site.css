@@ -17,3 +17,7 @@ footer{
 .nav-color {
     color: rgba(255, 255, 255, 0.5)
 }
+
+a.menu-style{
+    color: rgb(255, 255, 255)
+}
