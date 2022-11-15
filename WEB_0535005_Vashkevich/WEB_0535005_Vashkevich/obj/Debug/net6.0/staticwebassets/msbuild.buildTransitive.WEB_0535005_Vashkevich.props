@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WEB_0535005_Vashkevich.props" />
+</Project>

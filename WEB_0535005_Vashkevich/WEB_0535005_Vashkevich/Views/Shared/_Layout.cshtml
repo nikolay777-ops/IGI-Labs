@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WEB_0535005_Vashkevich</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WEB_0535005_Vashkevich.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="lib/font-awesome/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <!-- меню сайта -->
+                <a class="navbar-brand" href="#">WebLabsV06</a>
+                <div class="navbar-nav flex-grow-1">
+                    <a class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Lab 2</a>
+                    <a class="nav-item nav-link" asp-controller="Product" asp-action="Index">Каталог</a>
+                    <a class="nav-item nav-link" asp-area="Admin" asp-asp-page="/Index">Администрирование</a>
+                </div>
+                <!-- меню сайта - конец -->
+                <!-- Информация пользователя -->
+                <a asp-controller="Cart" asp-action="Index" class="navbar-text ml-auto">
+                    00,0 руб <i class="fas fa-shopping-cart nav-color"></i> (0)
+                </a>
+                <div id="dropdown_header" class="dropdown nav-color">
+                    <div class="dropdown-toggle" id="dropdownMenuButton"
+                         data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">
+                        <img src="images/avatar.jpg" width="30"
+                             alt="User" class="rounded" />
+                    </div>
+                    <div class="dropdown-menu"
+                         aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item-text">
+                            <img src="images/avatar.jpg" width="50"
+                                 alt="User" class="rounded" />
+                            user@mail.ru
+
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" asp-controller="Cart" asp-action="Index">Мои товары</a>
+                        <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout">Log off</a>
+                    </div>
+                </div>
+                <!-- Информация пользователя - конец -->
+            </nav> <!-- Панель навигации - конец -->
+        </div>
+    </header>
+    <main>
+        @RenderBody();
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="navbar-nav ms-auto">
+                    <a align="right" class="nav-item nav-link" href="http://www.facebook.com">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="http://www.vk.com">
+                        <i class="fab fa-vk fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="http://www.twitter.com">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,19 @@
+header{
+    background-color: #343a40
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #343a40;
+    margin-top: auto;
+}
+
+.nav-color {
+    color: rgba(255, 255, 255, 0.5)
+}
