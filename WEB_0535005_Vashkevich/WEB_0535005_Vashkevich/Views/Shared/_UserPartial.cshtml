@@ -1,20 +1,42 @@
-﻿   
-    @await Component.InvokeAsync("Cart")
+﻿@using Microsoft.AspNetCore.Identity;
+@using WEB_0535005_Vashkevich.Entities;
+@inject SignInManager<ApplicationUser> SignInManager
+@await Component.InvokeAsync("Cart")
+
+@if (SignInManager.IsSignedIn(User))
+{
     <div class="dropdown">
         <div class="dropbtn" data-toggle="dropdown">
-            <img src="~/images/avatar.jpg" height="40px"/>
+            <img src="@Url.Action("GetAvatar", "User")"
+            onerror="this.onerror=null; this.src='@Url.Content("~/images.avatar.jpg")'" width="50" class="rounded"/>
         </div>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menul">
             <div class="dropdown-item-text">
-                <img src="~/images/avatar.jpg" width="50" alt="User" class="rounded"/>
-                user@gmail.com
+                <img src="@Url.Action("GetAvatar", "User")"
+                onerror="this.onerror=null; this.src='@Url.Content("~/images/avatar.jpg")'" width="50" alt="User" class="rounded"/>
+                @User.Identity?.Name
             </div>
             <div class="dropdown-divider"></div>
             <li role="presentation" class="divider">AAAAA</li>
             <li role="presentation"><a asp-controller="Cart" asp-action="Index" class="but">Мои товары</a></li>
-            <li role="presentation"><a href="#">Logout</a></li>
+            <form method="post" id="form-inline" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnurl="@ViewContext.HttpContext.Request.Path">
+            <li role="presentation"><a onclick="document.getElementById('form-inline').submit()">Logout</a></li>
+            </form>
         </ul>
     </div>
+}
+else
+{
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" asp-area="Identity" asp-page="/Account/Login">
+            Войти
+        </a>
+
+        <a class="nav-item nav-link" asp-area="Identity" asp-page="/Account/Register">
+            Зарегистрироваться
+        </a>
+    </div>
+}
   
   
           
