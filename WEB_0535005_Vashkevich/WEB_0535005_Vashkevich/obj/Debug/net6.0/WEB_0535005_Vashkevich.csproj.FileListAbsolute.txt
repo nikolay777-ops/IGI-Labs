@@ -277,3 +277,10 @@ D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\obj\Debu
 D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\obj\Debug\net6.0\WEB_0535005_Vashkevich.pdb
 D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\obj\Debug\net6.0\WEB_0535005_Vashkevich.genruntimeconfig.cache
 D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\obj\Debug\net6.0\ref\WEB_0535005_Vashkevich.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\bin\Debug\net6.0\System.Web.Mvc.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\bin\Debug\net6.0\System.Web.Razor.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\bin\Debug\net6.0\System.Web.Helpers.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\bin\Debug\net6.0\System.Web.WebPages.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

@@ -8,6 +8,8 @@ namespace WEB_0535005_Vashkevich.Areas.Identity.Data;
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     public new DbSet<ApplicationUser> Users { get; set; }
+    public new DbSet<AlbumCategory> AlbumCategories { get; set; }
+    public new DbSet<Album> Albums { get; set; }
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)

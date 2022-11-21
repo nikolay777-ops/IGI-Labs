@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Linq;
 using WEB_0535005_Vashkevich.Entities;
 
 namespace WEB_0535005_Vashkevich.Areas.Identity.Data
@@ -26,7 +27,14 @@ namespace WEB_0535005_Vashkevich.Areas.Identity.Data
         public async void Initialize()
         {
             await _context.Database.EnsureCreatedAsync();
-
+            if (!_context.AlbumCategories.Any()) 
+            {
+                _context.AlbumCategories.Add(new AlbumCategory { CategoryName = "Rap" });
+                _context.AlbumCategories.Add(new AlbumCategory { CategoryName = "Pop" });
+                await _context.SaveChangesAsync();
+            }
+            
+            
             if (_context.Users.Any())
             {
                 return;

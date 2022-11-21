@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
 using WEB_0535005_Vashkevich.Models;
+using System.Security.Policy;
 
 namespace WEB_0535005_Vashkevich.Components
 {
@@ -7,7 +9,7 @@ namespace WEB_0535005_Vashkevich.Components
     {
         private List<MenuItem> _menuItems = new List<MenuItem>() {
             new MenuItem{Controller="Home", Action="Index", Text="Lab 3" },
-            new MenuItem{Controller="Product", Action="Index", Text="Каталог"},
+            new MenuItem{Controller="Product",Action ="Index", Text="Каталог"},
             new MenuItem{IsPage=true, Area="Admin", Page="/Index", Text="Администрирование"}
         };
 

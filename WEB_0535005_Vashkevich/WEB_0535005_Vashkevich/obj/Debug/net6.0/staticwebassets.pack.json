@@ -17,6 +17,30 @@
       "PackagePath": "staticwebassets\\htmlpage.html"
     },
     {
+      "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\albums\\abbey-road.jpg",
+      "PackagePath": "staticwebassets\\images\\albums\\abbey-road.jpg"
+    },
+    {
+      "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\albums\\dirty-mind.jpg",
+      "PackagePath": "staticwebassets\\images\\albums\\dirty-mind.jpg"
+    },
+    {
+      "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\albums\\ready-to-die.jpg",
+      "PackagePath": "staticwebassets\\images\\albums\\ready-to-die.jpg"
+    },
+    {
+      "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\albums\\the-chronic.jpg",
+      "PackagePath": "staticwebassets\\images\\albums\\the-chronic.jpg"
+    },
+    {
+      "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\albums\\thriller.jpg",
+      "PackagePath": "staticwebassets\\images\\albums\\thriller.jpg"
+    },
+    {
+      "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\albums\\yeezus.jpg",
+      "PackagePath": "staticwebassets\\images\\albums\\yeezus.jpg"
+    },
+    {
       "Id": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\images\\avatar.jpg",
       "PackagePath": "staticwebassets\\images\\avatar.jpg"
     },

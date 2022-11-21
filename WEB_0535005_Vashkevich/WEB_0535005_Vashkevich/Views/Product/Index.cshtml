@@ -1,10 +1,76 @@
-﻿@{
-    ViewData["Title"] = "Product";
-    Layout = "_Layout";
+﻿@model ListViewModel<Album>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var categories = ViewData["Groups"] as IEnumerable<AlbumCategory>;
+    int currentGroup = (int)ViewData["CurrentGroup"];
+    var text = currentGroup != 0
+                                ? categories
+                                  .FirstOrDefault(g => g.Id == currentGroup)
+                                  .CategoryName
+                                : "Все";
+    var request = ViewContext.HttpContext.Request;
+    var returnUrl = request.Path + request.QueryString.ToUriComponent();
 }
 
-<main>
-    <section class="home">
-        <h1>Product</h1>
-    </section>
-</main>
+<div class="scaffold">
+    <div class="row mt-5">
+        <div class="col-2" style="text-align: center;">
+               <div class="dropdown-2 mt-2">
+                    <a class="btn btn-outline-info dropdown-toggle"
+                        asp-action="Index" asp-controller="Product"
+                        role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        @text
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        @foreach (var item in categories)
+                        {
+                            <a class="dropdown-item" asp-action="Index" asp-controller="Product"
+                            asp-route-group="@item.Id" asp-route-pageNo="1">
+                                @item.CategoryName
+                            </a>   
+                        }
+                    </div>
+                </div>
+
+        </div>
+        <div class="col-10">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <partial name="_ListItemPartial" model="@item"/>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-2" style="text-align: center;">
+       <ul class="pagination justify-content-center">
+        
+           @for (int i = 1; i < Model.TotalPages+1; i++)
+            {
+                if (i == Model.CurrentPage)
+                {
+                    <li class="page-item active">
+                        <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-pageNo="@i">@i
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-pageNo="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+            }
+       </ul>
+        
+    </div>
+    <div class="col-10"></div>
+</div>
