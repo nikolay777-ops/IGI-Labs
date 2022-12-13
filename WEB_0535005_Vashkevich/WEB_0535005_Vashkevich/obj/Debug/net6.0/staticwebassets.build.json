@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G9NETQ0ISbmv/nNtTHTfksodwx2fJOD2HTWA4uU3e5I=",
+  "Hash": "tk2YBr3wGkAU4WDw/T1DhwxTYt8huYzOGmMoYI91o4A=",
   "Source": "WEB_0535005_Vashkevich",
   "BasePath": "_content/WEB_0535005_Vashkevich",
   "Mode": "Default",
@@ -1239,6 +1239,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\avatar.jpg"
+    },
+    {
+      "Identity": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\js\\pager.js",
+      "SourceId": "WEB_0535005_Vashkevich",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\",
+      "BasePath": "_content/WEB_0535005_Vashkevich",
+      "RelativePath": "js/pager.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pager.js"
     },
     {
       "Identity": "D:\\IGI\\Labs-Practise\\Lab1\\WEB_0535005_Vashkevich\\WEB_0535005_Vashkevich\\wwwroot\\js\\site.js",

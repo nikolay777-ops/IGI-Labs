@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.IO;
 using WEB_0535005_Vashkevich.Areas.Identity.Data;
 using WEB_0535005_Vashkevich.Entities;
+using WEB_0535005_Vashkevich.Extensions;
 using WEB_0535005_Vashkevich.Models;
 
 namespace WEB_0535005_Vashkevich.Controllers
@@ -20,18 +21,18 @@ namespace WEB_0535005_Vashkevich.Controllers
             _pageSize = 3;
         }
 
+        [Route("Catalog")]
+        [Route("Catalog/Page_{pageNo:int=1}")]
         public async Task<IActionResult> Index(int? group, int pageNo=1)
         {
             List<Album> allAlbums = null;
-           /* var result = FillAlbums();
-            foreach (var item in result.Item1)
-            {
-                _context.Albums.Add(item);
-            }
-           
-            await _context.SaveChangesAsync();*/
-            
-            
+            /* var result = FillAlbums();
+             foreach (var item in result.Item1)
+             {
+                 _context.Albums.Add(item);
+             }
+
+             await _context.SaveChangesAsync();*/
             if (_context.Albums != null)
             {
                 allAlbums = _context.Albums.ToListAsync().Result;
@@ -43,12 +44,20 @@ namespace WEB_0535005_Vashkevich.Controllers
                     allAlbums.AsQueryable(),
                     pageNo,
                     _pageSize,
-                    d => !group.HasValue || d.CategoryId == group.Value);
+                    d => (!group.HasValue || group.Value == 0) || d.CategoryId == group.Value);
                 ViewData["Groups"] = _context.AlbumCategories.ToListAsync().Result;
                 ViewData["CurrentGroup"] = group ?? 0;
-                return View(items);
+
+                if (Request.IsAjax())
+                    return PartialView("_ListPartial", items);
+                else
+                {
+                    return View(items);
+                }
             }
+
             return View();
+
         }
 
         public async Task<IActionResult> Edit(int id)

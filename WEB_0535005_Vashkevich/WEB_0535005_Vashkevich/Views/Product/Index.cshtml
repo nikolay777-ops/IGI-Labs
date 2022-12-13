@@ -37,7 +37,7 @@
 
         </div>
         <div class="col-10">
-            <div class="row">
+            <div class="row" id="list">
                 @foreach (var item in Model)
                 {
                     <partial name="_ListItemPartial" model="@item"/>
@@ -49,28 +49,30 @@
 
 <div class="row mt-5">
     <div class="col-2" style="text-align: center;">
-       <ul class="pagination justify-content-center">
-        
-           @for (int i = 1; i < Model.TotalPages+1; i++)
-            {
-                if (i == Model.CurrentPage)
-                {
-                    <li class="page-item active">
-                        <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-pageNo="@i">@i
-                        </a>
-                    </li>
-                }
-                else
-                {
-                    <li class="page-item">
-                        <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-pageNo="@i">
-                            @i
-                        </a>
-                    </li>
-                }
-            }
-       </ul>
-        
+       <pager page-current="@Model.CurrentPage"
+            page-total="@Model.TotalPages"
+            action="Index"
+            controller="Product"
+            group-id="@currentGroup">
+       </pager> 
     </div>
     <div class="col-10"></div>
 </div>
+
+@section Scripts{
+    <script src="~/js/site.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".page-link").click(function (e) {
+                e.preventDefault();
+                
+                var uri = this.attributes["href"].value;
+                $("#list").load(uri);
+                $(".active").removeClass("active disabled");
+                $(this).parent().addClass("active");
+                history.pushState(null, null, uri);
+            });
+        });
+    </script>
+}

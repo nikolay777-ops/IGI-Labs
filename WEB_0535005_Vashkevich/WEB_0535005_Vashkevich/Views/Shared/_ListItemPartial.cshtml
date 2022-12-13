@@ -24,5 +24,21 @@
         </div>
     </div>
 </div>
+<script src="lib/jquery/dist/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+    $("li.page-item").click(function (e){
+        e.preventDefault();
+
+        var uri = this.attributes["href"].value;
+
+        $("#list").load(uri);
+        $(".active").removeClass("active disabled");
+        $(this).parent().addClass("active");
+
+        history.pushState(null, null, uri);
+    });
+    });
+</script>
 
 

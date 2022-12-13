@@ -7,13 +7,14 @@
 {
     <div class="dropdown">
         <div class="dropbtn" data-toggle="dropdown">
-            <img src="@Url.Action("GetAvatar", "User")"
-            onerror="this.onerror=null; this.src='@Url.Content("~/images.avatar.jpg")'" width="50" class="rounded"/>
+            <img img-action="GetAvatar"
+             img-controller="User" width="50" alt="User" class="rounded"/>
+         
         </div>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menul">
             <div class="dropdown-item-text">
-                <img src="@Url.Action("GetAvatar", "User")"
-                onerror="this.onerror=null; this.src='@Url.Content("~/images/avatar.jpg")'" width="50" alt="User" class="rounded"/>
+                <img img-action="GetAvatar"
+                     img-controller="User" width="50" alt="User" class="rounded"/>
                 @User.Identity?.Name
             </div>
             <div class="dropdown-divider"></div>
