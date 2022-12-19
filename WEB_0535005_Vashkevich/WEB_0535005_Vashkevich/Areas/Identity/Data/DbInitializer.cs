@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using WEB_0535005_Vashkevich.Entities;
 
@@ -14,6 +15,7 @@ namespace WEB_0535005_Vashkevich.Areas.Identity.Data
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+       
     
         public DbInitializer(ApplicationDbContext context, 
             UserManager<ApplicationUser> userManager,
@@ -27,14 +29,14 @@ namespace WEB_0535005_Vashkevich.Areas.Identity.Data
         public async void Initialize()
         {
             await _context.Database.EnsureCreatedAsync();
-            if (!_context.AlbumCategories.Any()) 
+
+            if (!_context.AlbumCategories.Any())
             {
                 _context.AlbumCategories.Add(new AlbumCategory { CategoryName = "Rap" });
                 _context.AlbumCategories.Add(new AlbumCategory { CategoryName = "Pop" });
                 await _context.SaveChangesAsync();
             }
-            
-            
+
             if (_context.Users.Any())
             {
                 return;
@@ -59,7 +61,7 @@ namespace WEB_0535005_Vashkevich.Areas.Identity.Data
                 EmailConfirmed = true
             };
 
-            var result =  await _userManager.CreateAsync(admin, pass);
+            var result = await _userManager.CreateAsync(admin, pass);
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(admin, "admin");

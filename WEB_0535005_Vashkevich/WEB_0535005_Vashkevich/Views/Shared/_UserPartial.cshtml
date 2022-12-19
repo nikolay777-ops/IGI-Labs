@@ -8,17 +8,16 @@
     <div class="dropdown">
         <div class="dropbtn" data-toggle="dropdown">
             <img img-action="GetAvatar"
-             img-controller="User" width="50" alt="User" class="rounded"/>
+             img-controller="User" width="25" alt="User" class="rounded"/>
          
         </div>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menul">
             <div class="dropdown-item-text">
                 <img img-action="GetAvatar"
-                     img-controller="User" width="50" alt="User" class="rounded"/>
+                     img-controller="User" width="25" alt="User" class="rounded"/>
                 @User.Identity?.Name
             </div>
-            <div class="dropdown-divider"></div>
-            <li role="presentation" class="divider">AAAAA</li>
+            <div class="dropdown-divider"></div>    
             <li role="presentation"><a asp-controller="Cart" asp-action="Index" class="but">Мои товары</a></li>
             <form method="post" id="form-inline" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnurl="@ViewContext.HttpContext.Request.Path">
             <li role="presentation"><a onclick="document.getElementById('form-inline').submit()">Logout</a></li>

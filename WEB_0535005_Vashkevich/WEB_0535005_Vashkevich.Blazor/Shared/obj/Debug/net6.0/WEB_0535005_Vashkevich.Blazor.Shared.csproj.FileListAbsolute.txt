@@ -1,0 +1,12 @@
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\bin\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.deps.json
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\bin\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\bin\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.pdb
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.csproj.AssemblyReference.cache
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.AssemblyInfoInputs.cache
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.AssemblyInfo.cs
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.csproj.CoreCompileInputs.cache
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\refint\WEB_0535005_Vashkevich.Blazor.Shared.dll
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\WEB_0535005_Vashkevich.Blazor.Shared.pdb
+D:\IGI\Labs-Practise\Lab1\WEB_0535005_Vashkevich\WEB_0535005_Vashkevich.Blazor\Shared\obj\Debug\net6.0\ref\WEB_0535005_Vashkevich.Blazor.Shared.dll

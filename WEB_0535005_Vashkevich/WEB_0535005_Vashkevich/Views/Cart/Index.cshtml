@@ -1,12 +1,82 @@
-﻿
+﻿@model IEnumerable<WEB_0535005_Vashkevich.Models.CartItem>
+
 @{
     ViewData["Title"] = "Cart";
-    Layout = "_Layout";
 }
 
-<main>
-    <section class="home">
-        <h1>Cart</h1>
-    </section>
-</main>
+<div class="scaffold">
+    <h1>Your cart</h1>
 
+    <table class="table table-bordered table-striped" style="text-align: center">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Album.Image)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Album.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Album.Price)
+                </th>
+                <th>
+                    <a class="btn btn-outline-danger"
+                       asp-action="ClearAll" asp-controller="Cart">
+                        Clear all
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/images/albums/@item.Album.Image" class="card-img-top" />
+                        
+                    </td>
+                    <td>
+                        <label>@item.Album.Name</label>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @{
+                            var price = item.Quantity * item.Album.Price;
+                        }
+                        @Html.DisplayFor(modelItem => price)
+                    </td>
+                    <td>
+                        @{
+                            var request = ViewContext.HttpContext.Request;
+                            var returnUrl = request.Path + request.QueryString.ToUriComponent();
+                        }
+
+                        <a class="btn btn-outline-success"
+                       asp-action="Add" asp-controller="Cart"
+                       asp-route-id="@item.Album.Id"
+                       asp-route-returnUrl="@returnUrl">
+                            +
+                        </a>
+                        <a class="btn btn-outline-danger"
+                       asp-action="RemoveOne" asp-controller="Cart"
+                       asp-route-id="@item.Album.Id"
+                       asp-route-returnUrl="@returnUrl">
+                            -
+                        </a>
+                        |
+                        <a class="btn btn-outline-warning"
+                       asp-action="Delete" asp-controller="Cart"
+                       asp-route-id="@item.Album.Id">
+                            ×
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,3 +1,5 @@
-﻿<a asp-controller="Cart" asp-action="Index" class="but navbar-text cart" style="margin-right: 10px; max-width: 120px">
-    00,0 руб (0)
+﻿@model WEB_0535005_Vashkevich.Models.Cart
+
+<a asp-controller="Cart" asp-action="Index" class="but navbar-text cart" style="margin-right: 10px; max-width: 120px">
+    $@Model.Cash (@Model.Count)
 </a>

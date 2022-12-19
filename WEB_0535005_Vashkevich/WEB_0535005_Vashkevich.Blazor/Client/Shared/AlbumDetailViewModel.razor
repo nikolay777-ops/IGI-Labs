@@ -1,0 +1,37 @@
+﻿@using WEB_0535005_Vashkevich.Blazor.Shared
+@using System.Text.Json.Serialization
+
+@if(Alb is not null)
+{
+    <div class="row">
+        <div class="col-5">
+            <img src="@imageSrc" alt="carImage" width="300" class="rounded">
+        </div>
+        <div class="col-5">
+            <div class="card-body">
+                <h5 class="card-title">
+                    @Alb.Name
+                </h5>
+                <div class="dropdown-divider"></div>
+                <p class="card-text">
+                    @Alb.Description
+                </p>
+                <div class="dropdown-divider"></div>
+                <p class="card-text">
+                    Price: @Alb.Price
+                </p>
+            </div>
+        </div>
+    </div>
+}
+
+@code
+{
+    [Parameter]
+    public Album Alb { get; set; }
+
+    string imageSrc => Alb.Image == null ? "/images/avatar.jpg" : $"/images/albums/{Alb.Image}";
+
+    [Parameter]
+    public EventCallback<Album> AlbChanged { get; set; }
+}

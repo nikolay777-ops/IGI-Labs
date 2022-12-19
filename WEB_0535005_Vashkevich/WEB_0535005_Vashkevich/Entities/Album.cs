@@ -14,7 +14,7 @@ namespace WEB_0535005_Vashkevich.Entities
         public string? Image { get; set; }
 
         [Display(Name = "Category")]
-        public int CategoryId { get; set; }
+        public AlbumCategory Category { get; set; }
     }
 
     public class AlbumCategory

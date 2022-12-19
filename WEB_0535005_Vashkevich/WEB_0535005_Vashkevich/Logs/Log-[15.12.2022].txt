@@ -1,0 +1,91 @@
+15.12.2022 12:55:56  Request: /Logout returns status code 404
+User logged out.
+15.12.2022 13:03:47 ?returnurl=%2F Request: /Identity/Account/Logout returns status code 302
+15.12.2022 13:03:50  Request: /Identity/Account/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:04:17  Request: /Identity/Account/lib/font-awesome/css/all.min.css returns status code 404
+User logged in.
+15.12.2022 13:05:09  Request: /Identity/Account/Login returns status code 302
+User logged out.
+15.12.2022 13:05:12 ?returnurl=%2F Request: /Identity/Account/Logout returns status code 302
+15.12.2022 13:05:14  Request: /Identity/Account/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:05:25  Request: /Identity/Account/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:07:41  Request: /Identity/Account/lib/font-awesome/css/all.min.css returns status code 404
+Role b066f88a-37a0-4f08-bc46-d50b49e25d40 validation failed: DuplicateRoleName.
+Role b81a4a2e-bf02-4390-8b91-b67b9d35e0eb validation failed: DuplicateRoleName.
+15.12.2022 13:15:48  Request: /Identity/Account/lib/font-awesome/css/all.min.css returns status code 404
+User logged in.
+15.12.2022 13:15:57  Request: /Identity/Account/Login returns status code 302
+15.12.2022 13:19:48 ?v=OatA9zc9xCZbGh2h4uHXwYaP81YzVMP-pInxsU1GF9o Request: /WEB_0535005_Vashkevich.styles.css returns status code 304
+15.12.2022 13:20:07  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:22:43  Request: /Admin/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:22:50  Request: /Admin/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:22:54  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:24:43  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:26:21  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:29:00  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:35:33  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:35:35 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/2 returns status code 302
+15.12.2022 13:35:35  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:35:36 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/3 returns status code 302
+15.12.2022 13:35:36  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:51:37  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:51:39 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/2 returns status code 302
+15.12.2022 13:51:39  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:51:41 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/3 returns status code 302
+15.12.2022 13:51:41  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:51:50  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:53:17  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:53:19 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/2 returns status code 302
+15.12.2022 13:53:19  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:53:21 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/3 returns status code 302
+15.12.2022 13:53:21  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:53:44  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:53:53  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 13:54:00  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:13:08  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:13:09 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/2 returns status code 302
+15.12.2022 14:13:09  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:13:10 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/3 returns status code 302
+15.12.2022 14:13:10  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:13:22  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:13:23 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/2 returns status code 302
+15.12.2022 14:13:23  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:13:27 ?returnUrl=%2FCart Request: /Cart/RemoveOne/2 returns status code 404
+15.12.2022 14:13:37 ?returnUrl=%2FCart Request: /Cart/Add/2 returns status code 302
+15.12.2022 14:13:42  Request: /Cart/Delete/2 returns status code 404
+15.12.2022 14:13:46  Request: /Cart/ClearAll returns status code 404
+15.12.2022 14:19:11  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:19:13 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/2 returns status code 302
+15.12.2022 14:19:13  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:19:14 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/3 returns status code 302
+15.12.2022 14:19:14  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:19:17 ?returnUrl=%2FCart Request: /Cart/RemoveOne/2 returns status code 302
+15.12.2022 14:19:19  Request: /Cart/ClearAll returns status code 302
+15.12.2022 14:19:20  Request: /Cart/ClearAll returns status code 302
+15.12.2022 14:19:22  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:19:24 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/2 returns status code 302
+15.12.2022 14:19:24  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:19:25 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/3 returns status code 302
+15.12.2022 14:19:25  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:19:26 ?returnUrl=%2FCatalog%2FPage_1 Request: /Cart/Add/4 returns status code 302
+15.12.2022 14:19:26  Request: /Catalog/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 14:19:29 ?returnUrl=%2FCart Request: /Cart/Add/2 returns status code 302
+15.12.2022 14:19:29 ?returnUrl=%2FCart Request: /Cart/Add/2 returns status code 302
+15.12.2022 16:00:09 ?v=DlYu-7u4uh_EpHalHsC0w2hBBhMr6TvANZcEVqhvoNE Request: /css/site.css returns status code 304
+15.12.2022 16:00:37  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:05:52  Request: /Identity/Account/lib/font-awesome/css/all.min.css returns status code 404
+User logged in.
+15.12.2022 16:06:09  Request: /Identity/Account/Login returns status code 302
+15.12.2022 16:06:27  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:08:22  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:08:40  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:11:52  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:14:34  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:16:05  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:22:20  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:22:20 ?v=OatA9zc9xCZbGh2h4uHXwYaP81YzVMP-pInxsU1GF9o Request: /WEB_0535005_Vashkevich.styles.css returns status code 304
+15.12.2022 16:24:20  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:27:42  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:29:21  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404
+15.12.2022 16:32:38 ?v=OatA9zc9xCZbGh2h4uHXwYaP81YzVMP-pInxsU1GF9o Request: /WEB_0535005_Vashkevich.styles.css returns status code 304
+15.12.2022 16:32:44  Request: /Admin/Edit/lib/font-awesome/css/all.min.css returns status code 404

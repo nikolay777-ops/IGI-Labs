@@ -19,6 +19,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.Entity<ApplicationUser>().ToTable("AspNetUsers");
+        builder.Entity<AlbumCategory>().ToTable("AlbumCategories");
+        builder.Entity<Album>().ToTable("Albums");
         base.OnModelCreating(builder);
     }
 }
